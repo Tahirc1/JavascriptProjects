@@ -1,0 +1,31 @@
+body{
+    background-color:rgb(27, 95, 72);
+    text-align: center;
+}
+
+header{
+    padding: 10px;
+    background-color: aqua;
+    margin-bottom: 25px ;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height:50vh;
+    padding: 5px;
+    margin: auto;
+    width:80vw;
+    background-color: aquamarine;
+    font-size: x-large;
+}
+
+input{
+    padding: 5px;
+    font-size: larger;
+}
+
+#sec{
+    color: red;
+}
