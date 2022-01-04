@@ -1,0 +1,31 @@
+body{
+    background-color: black;
+    color :aqua;
+}
+
+.container{
+    margin: auto;
+    margin-left: 35vw;
+}
+
+.searchbox{
+    margin-left:7%;
+}
+
+.searchbox input{
+    font-size: larger;
+    padding: 9px;
+    margin-bottom: 20px;
+}
+h1{
+    margin-bottom: 10px;
+}
+.white{
+    background-color: rgba(20, 19, 19, 0.774);
+    color:aqua;
+    width: auto;
+}
+
+.matchlist{
+    background-color: blueviolet;
+}

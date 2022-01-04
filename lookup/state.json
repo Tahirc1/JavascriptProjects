@@ -1,0 +1,16 @@
+[
+{
+"abb":"MH",
+"name":"Maharashtra",
+"capital":"Mumbai"
+},
+{
+    "abb":"UP",
+    "name":"Uttarpradesh",
+    "capital":"Lucknow"
+    },
+    {
+        "abb":"MP",
+        "name":"Madyapradesh",
+        "capital":"bhopal"
+        }]
