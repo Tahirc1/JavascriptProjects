@@ -17,7 +17,7 @@
 
             <% for(i = 0 ; i < todos.length ; i++) { %>
             
-                <li> <%= todos[i].item  %></li>
+                <li class="list"> <%= todos[i].item  %></li>
             
             <%  } %>
 
@@ -26,15 +26,28 @@
     <script language="javascript">
         let tform = document.getElementById('todo-table');
         tform.addEventListener('submit',(e)=>{e.preventDefault();sub()})
+
         function sub() {
-           
         let item = document.getElementById('item');
         console.log(item.value)
         fetch('/todo', {method:'POST',
         headers:{'Content-type':'application/json'},
         body: JSON.stringify({'item' : item.value})
         }).then(res => {window.location.reload()}).catch((err)=>{console.log(err)})
-    }
+        }
+
+        let lili = document.querySelectorAll('.list');
+        lili.forEach((ele)=>{ele.addEventListener('click',del)})
+        function del(e){
+            let item =  e.target.innerText;
+            console.log(item);
+            fetch('/todo', {method:'DELETE',
+            headers:{'Content-type':'application/json'},
+            body: JSON.stringify({'item' : item})
+            }).then(res => {window.location.reload()}).catch((err)=>{console.log(err)})
+        }
+        
+    
     </script>
 </body>
 

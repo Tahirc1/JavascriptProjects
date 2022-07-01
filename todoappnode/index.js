@@ -8,6 +8,7 @@ app.set('view engine','ejs');
 // set resource directory for assets
 app.use(express.static('./public'));
 app.use(express.json());
+// set middleware
 app.use(express.urlencoded({extended:true}))
 // set port
 app.listen('3000');
